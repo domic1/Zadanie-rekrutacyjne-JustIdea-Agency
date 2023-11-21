@@ -111,7 +111,7 @@
 }
 
 .contact-form {
-  height: 777px;
+  height: auto;
   max-width: 100%;
   width: 100%;
   background-image: url(../img/Prostokąt\ 58.png);
@@ -129,7 +129,6 @@
   border-radius: 5px;
   background-color: #35a8e0;
 }
-
 .contact-form__text-fields {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -163,4 +162,18 @@
 }
 .contact-form__checkbox a {
   color: #2c69af;
+}
+.contact-form .form__field textarea {
+  margin-top: 30px;
+  width: 951px;
+  height: 124px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
