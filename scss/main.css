@@ -29,6 +29,8 @@ body {
   .container {
     width: 720px;
     max-width: 100%;
+    padding-right: unset;
+    padding-left: unset;
   }
 }
 @media (max-width: 576px) {
@@ -161,7 +163,6 @@ body {
 
 .forms {
   height: auto;
-  max-width: 100%;
   width: 100%;
   background-image: url(../img/bgc.png);
   background-position: center;
@@ -324,15 +325,19 @@ body {
     padding: 0 15px;
   }
   .contact-form__text-fields .form__field textarea {
-    padding: 0 15px;
+    margin: 0 15px 0;
     max-width: unset;
-    width: 100%;
+    width: 80%;
   }
   .contact-form__boxes {
     max-width: unset;
+    margin: 0 30px;
   }
 }
 @media (max-width: 768px) {
+  .main__our-competitions {
+    padding: unset;
+  }
   .main .circle-container .circle-item:nth-child(1) {
     transform: rotate(0deg) translate(150px) rotate(0deg);
   }
@@ -369,7 +374,29 @@ body {
   .main .circle-container .circle-item:nth-child(12) {
     transform: rotate(330deg) translate(150px) rotate(-330deg);
   }
-  .contact-form__text-fields {
+  .forms .contact-form__text-fields {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .forms .contact-form .form__field textarea {
+    margin: 15px;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding-left: unset;
+    padding-right: unset;
+  }
+  .main .circle-container .circle-item div {
+    display: flex;
+  }
+  .main .circle-container .circle-item div img {
+    width: 40px;
+    max-height: 40px;
+    max-width: 100%;
+    height: auto;
+  }
+  .forms .contact-form__text-fields {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
