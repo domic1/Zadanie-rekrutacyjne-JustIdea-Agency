@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@ body {
   color: #000;
 }
 
+/* Container */
 .container {
   margin: 0 auto;
   max-width: 1350px;
@@ -39,6 +41,7 @@ body {
   }
 }
 
+/* Powtarzalne parametry dla h2 i p */
 .title {
   text-align: center;
   font-size: 36px;
@@ -56,15 +59,14 @@ body {
   font-weight: 400;
 }
 
+/* Mixin do rozmieszczenia elementów na średnicy koła */
 .main {
   margin-bottom: 120px;
 }
-
 .main__our-competitions {
   margin: 90px auto;
 }
-
-.circle-container {
+.main .circle-container {
   position: relative;
   width: 100%;
   max-width: 596px;
@@ -74,9 +76,8 @@ body {
   background-image: url(../img/POZNAJ\ NASZE\ KOMPETENCJE.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
-.circle-container .circle-item {
+.main .circle-container .circle-item {
   position: absolute;
   display: flex;
   align-items: center;
@@ -90,79 +91,79 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-.circle-container .circle-item:nth-child(1) {
+.main .circle-container .circle-item:nth-child(1) {
   transform: rotate(0deg) translate(300px) rotate(0deg);
 }
-.circle-container .circle-item:nth-child(2) {
+.main .circle-container .circle-item:nth-child(2) {
   transform: rotate(30deg) translate(300px) rotate(-30deg);
 }
-.circle-container .circle-item:nth-child(3) {
+.main .circle-container .circle-item:nth-child(3) {
   transform: rotate(60deg) translate(300px) rotate(-60deg);
 }
-.circle-container .circle-item:nth-child(4) {
+.main .circle-container .circle-item:nth-child(4) {
   transform: rotate(90deg) translate(300px) rotate(-90deg);
 }
-.circle-container .circle-item:nth-child(5) {
+.main .circle-container .circle-item:nth-child(5) {
   transform: rotate(120deg) translate(300px) rotate(-120deg);
 }
-.circle-container .circle-item:nth-child(6) {
+.main .circle-container .circle-item:nth-child(6) {
   transform: rotate(150deg) translate(300px) rotate(-150deg);
 }
-.circle-container .circle-item:nth-child(7) {
+.main .circle-container .circle-item:nth-child(7) {
   transform: rotate(180deg) translate(300px) rotate(-180deg);
 }
-.circle-container .circle-item:nth-child(8) {
+.main .circle-container .circle-item:nth-child(8) {
   transform: rotate(210deg) translate(300px) rotate(-210deg);
 }
-.circle-container .circle-item:nth-child(9) {
+.main .circle-container .circle-item:nth-child(9) {
   transform: rotate(240deg) translate(300px) rotate(-240deg);
 }
-.circle-container .circle-item:nth-child(10) {
+.main .circle-container .circle-item:nth-child(10) {
   transform: rotate(270deg) translate(300px) rotate(-270deg);
 }
-.circle-container .circle-item:nth-child(11) {
+.main .circle-container .circle-item:nth-child(11) {
   transform: rotate(300deg) translate(300px) rotate(-300deg);
 }
-.circle-container .circle-item:nth-child(12) {
+.main .circle-container .circle-item:nth-child(12) {
   transform: rotate(330deg) translate(300px) rotate(-330deg);
 }
-.circle-container .circle-item img {
+.main .circle-container .circle-item img {
   width: 80px;
   max-height: 80px;
   max-width: 100%;
   height: auto;
 }
-.circle-container .circle-item:nth-child(4) {
+.main .circle-container .circle-item:nth-child(4) {
   display: flex;
   flex-direction: column;
 }
-.circle-container .circle-item:nth-child(10) {
+.main .circle-container .circle-item:nth-child(10) {
   display: flex;
   flex-direction: column-reverse;
 }
-.circle-container .circle-item:nth-child(9) {
+.main .circle-container .circle-item:nth-child(9) {
   display: flex;
   flex-direction: row-reverse;
 }
-.circle-container .circle-item:nth-child(8) {
+.main .circle-container .circle-item:nth-child(8) {
   display: flex;
   flex-direction: row-reverse;
 }
-.circle-container .circle-item:nth-child(7) {
+.main .circle-container .circle-item:nth-child(7) {
   display: flex;
   flex-direction: row-reverse;
 }
-.circle-container .circle-item:nth-child(6) {
+.main .circle-container .circle-item:nth-child(6) {
   display: flex;
   flex-direction: row-reverse;
 }
-.circle-container .circle-item:nth-child(5) {
+.main .circle-container .circle-item:nth-child(5) {
   display: flex;
   flex-direction: row-reverse;
 }
 
 .contact-form {
-  padding: 60px 90px;
+  padding: 45px 0;
   height: auto;
   max-width: 100%;
   width: 100%;
