@@ -1,4 +1,9 @@
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto';
 }
 
 .container {
@@ -47,7 +52,6 @@ body {
 	line-height: 24px;
 	color: #000;
 	font-weight: 400;
-	font-family: 'Roboto';
 }
 
 @mixin place-elements-on-circle($num-elements, $circle-radius) {
@@ -67,7 +71,7 @@ body {
 	width: 596px;
 	height: 596px;
 	border-radius: 298px;
-	margin: 50px auto;
+	margin: 0px auto;
 	background-image: url(../img/POZNAJ\ NASZE\ KOMPETENCJE.svg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -85,44 +89,62 @@ body {
 	}
 }
 .contact-form {
+	padding: 60px 90px;
 	height: auto;
 	max-width: 100%;
 	width: 100%;
-	background-image: url(../img/Prostokąt\ 58.png);
+	background-image: url(../img/bgc.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	&__boxes {
+		margin: 0 auto;
+		max-width: 915px;
+		width: 100%;
+	}
 	button {
+		margin-top: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		width: 163px;
+		max-width: 100%;
 		height: 52px;
-		border-radius: 5px;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #ffffff;
 		background-color: #35a8e0;
+		border: 1px solid #35a8e0;
+		border-radius: 5px;
 	}
 
 	&__text-fields {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 30px;
+		gap: 15px;
 		input,
 		select {
 			max-width: 100%;
 			height: 50px;
-			border-radius: 5px;
-			background-color: #ffffff;
-			border: 1px solid #dbdbdb;
+			font-family: 'Hind';
 			font-size: 16px;
 			line-height: 33px;
-			color: #2f2f2f;
 			font-weight: 600;
-			font-family: 'Hind';
+			color: #000;
+			background-color: #ffffff;
+			border: 1px solid #dbdbdb;
+			border-radius: 5px;
 		}
 	}
 	&__data {
-		margin-bottom: 90px;
+		margin-bottom: 30px;
+		color: #fff;
+		a {
+			color: #fff;
+		}
 	}
 	&__checkbox {
 		margin-top: 30px;
@@ -138,19 +160,26 @@ body {
 		}
 	}
 	.form__field {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		textarea {
-			margin-top: 30px;
+			margin-top: 15px;
 			width: 951px;
-			height: 124px;
+			max-width: 100%;
+			height: auto;
+			font-size: 14px;
+			line-height: 16px;
+			font-weight: 400;
+			text-align: left;
+			color: #000;
 			border-radius: 5px;
 			background-color: #ffffff;
 			border: 1px solid #dbdbdb;
-			font-size: 14px;
-			line-height: 16px;
-			color: #ffffff;
-			font-weight: 400;
-			font-family: 'Roboto';
-			text-align: center;
 		}
+	}
+	.contact-form__titile {
+		color: #fff;
 	}
 }

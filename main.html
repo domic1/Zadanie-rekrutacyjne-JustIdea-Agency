@@ -64,42 +64,45 @@
     </section>
     <form class="contact-form">
         <div class="container">
-            <h2 class="contact-form__titile title">Skontaktuj się z nami</h2>
-            <p class="contact-form__data text-field">Zadzwoń <a href="">+48 535 015 835</a> lub wypełnij formularz</p>
-            <div class="contact-form__text-fields">
-                <input type="text" placeholder="Imię i Nazwisko" name="name" id="name" c>
-                <input type="phone" placeholder="Telefon" name="number" id="number">
-                <input type="mail" placeholder="E-mail" name="mail" id="mail">
-                <input type="text" placeholder="Firma" name="company" id="company">
-                <select name="number of employees" id="number of employees">
-                    <option value="">Ilość pracowników</option>
-                    <option value="small">1-10</option>
-                    <option value="little">10-30</option>
-                    <option value="normal">30-50</option>
-                    <option value="big">50-100</option>
-                    <option value="biggest">>100</option>
-                </select>
-                <select name="earn of company" id="number of employees">
-                    <option value="">Roczny dochów firmy</option>
-                    <option value="small">1-10t zł/msc</option>
-                    <option value="little">10-30t zł/msc</option>
-                    <option value="normal">30-50t zł/msc</option>
-                    <option value="big">50-100t zł/msc</option>
-                    <option value="biggest">>100t zł/msc</option>
-                </select>
+            <div class="contact-form__boxes">
+                <h2 class="contact-form__titile title">Skontaktuj się z nami</h2>
+                <p class="contact-form__data text-field">Zadzwoń <a href="">+48 535 015 835</a> lub wypełnij formularz
+                </p>
+                <div class="contact-form__text-fields">
+                    <input type="text" placeholder="Imię i Nazwisko" name="name" id="name" c>
+                    <input type="phone" placeholder="Telefon" name="number" id="number">
+                    <input type="mail" placeholder="E-mail" name="mail" id="mail">
+                    <input type="text" placeholder="Firma" name="company" id="company">
+                    <select name="number of employees" id="number of employees">
+                        <option value="">Ilość pracowników</option>
+                        <option value="small">1-10</option>
+                        <option value="little">10-30</option>
+                        <option value="normal">30-50</option>
+                        <option value="big">50-100</option>
+                        <option value="biggest">>100</option>
+                    </select>
+                    <select name="earn of company" id="number of employees">
+                        <option value="">Roczny dochów firmy</option>
+                        <option value="small">1-10t zł/msc</option>
+                        <option value="little">10-30t zł/msc</option>
+                        <option value="normal">30-50t zł/msc</option>
+                        <option value="big">50-100t zł/msc</option>
+                        <option value="biggest">>100t zł/msc</option>
+                    </select>
+
+                </div>
+                <div class="form__field">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                    <div class="contact-form__checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <p>Zapozanałem(-łam) się z <a href="#Polityką prywatności">Polityką prywatności</a> oraz z <a
+                                href="#Zastrzeżeniami prawnymi">Zastrzeżeniami prawnymi</a>.</p>
+                    </div>
+                    <button type="submit" class="form__submit">wyslij</button>
+                </div>
+
 
             </div>
-            <div class="form__field">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-            </div>
-            <div class="contact-form__checkbox">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <p>Zapozanałem(-łam) się z <a href="#Polityką prywatności">Polityką prywatności</a> oraz z <a
-                        href="#Zastrzeżeniami prawnymi">Zastrzeżeniami prawnymi</a>.</p>
-            </div>
-
-
-            <button type="submit" class="form__submit">wyslij</button>
         </div>
     </form>
     <script src="./js/main.js"></script>
