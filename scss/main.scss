@@ -1,8 +1,4 @@
 body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	font-family: 'Roboto';
 	color: #000;
 }
@@ -13,32 +9,32 @@ body {
 	padding-left: 24px;
 	padding-right: 24px;
 	width: 100%;
-
-	@media (max-width: 1200px) {
-		.container {
-			width: 1140px;
-			max-width: 100%;
-		}
-	}
-	@media (max-width: 992px) {
-		.container {
-			width: 960px;
-			max-width: 100%;
-		}
-	}
-	@media (max-width: 768px) {
-		.container {
-			width: 720px;
-			max-width: 100%;
-		}
-	}
-	@media (max-width: 576px) {
-		.container {
-			width: 540px;
-			max-width: 100%;
-		}
+}
+@media (max-width: 1200px) {
+	.container {
+		width: 1140px;
+		max-width: 100%;
 	}
 }
+@media (max-width: 992px) {
+	.container {
+		width: 960px;
+		max-width: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		width: 720px;
+		max-width: 100%;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		width: 540px;
+		max-width: 100%;
+	}
+}
+
 /* Powtarzalne parametry dla h2 i p */
 .title {
 	text-align: center;
@@ -71,6 +67,7 @@ body {
 
 	&__our-competitions {
 		margin: 90px auto;
+		padding: 30px;
 	}
 	.circle-container {
 		position: relative;
@@ -79,7 +76,7 @@ body {
 		height: 596px;
 		border-radius: 298px;
 		margin: 0px auto;
-		background-image: url(../img/POZNAJ\ NASZE\ KOMPETENCJE.svg);
+		background-image: url(../img/pzk.png);
 		background-position: center;
 		background-repeat: no-repeat;
 
@@ -134,8 +131,7 @@ body {
 		}
 	}
 }
-.contact-form {
-	padding: 45px 0;
+.forms {
 	height: auto;
 	max-width: 100%;
 	width: 100%;
@@ -143,103 +139,116 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	&__boxes {
-		margin: 0 auto;
-		max-width: 915px;
-		width: 100%;
-	}
-	button {
-		margin-top: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		width: 163px;
-		max-width: 100%;
-		height: 52px;
-		font-size: 14px;
-		line-height: 18px;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: #ffffff;
-		background-color: #35a8e0;
-		border: 1px solid #35a8e0;
-		border-radius: 5px;
-		cursor: pointer;
-	}
 
-	&__text-fields {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 15px;
-
-		input,
-		select {
-			padding-left: 15px;
-			max-width: 100%;
-			height: 50px;
-			font-family: 'Hind';
-			font-size: 16px;
-			line-height: 33px;
-			font-weight: 600;
-			color: #000;
-			background-color: #ffffff;
-			border: 1px solid #dbdbdb;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-	}
-	&__data {
-		margin-bottom: 30px;
-		color: #fff;
-		a {
-			color: #fff;
-		}
-	}
-	&__checkbox {
-		margin-top: 30px;
+	.contact-form {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		gap: 10px;
-		input {
-			cursor: pointer;
-			border-radius: 5px;
+		&__boxes {
+			padding: 15px;
+			max-width: 915px;
+			width: 100%;
 		}
-		p {
-			color: #fff;
-		}
-		a {
-			color: #2c69af;
-		}
-	}
-	.form__field {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		textarea {
-			margin-top: 15px;
-			width: 951px;
+		button {
+			margin-top: 30px;
+			margin-bottom: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 163px;
 			max-width: 100%;
-			height: auto;
+			height: 52px;
 			font-size: 14px;
-			line-height: 16px;
-			font-weight: 400;
-			text-align: left;
-			color: #000;
+			line-height: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #ffffff;
+			background-color: #35a8e0;
+			border: 1px solid #35a8e0;
 			border-radius: 5px;
-			background-color: #ffffff;
-			border: 1px solid #dbdbdb;
+			cursor: pointer;
 		}
-	}
-	.contact-form__titile {
-		color: #fff;
+
+		&__text-fields {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 15px;
+
+			input,
+			select {
+				padding-left: 15px;
+				max-width: 100%;
+				height: 50px;
+				font-family: 'Hind';
+				font-size: 16px;
+				line-height: 33px;
+				font-weight: 600;
+				color: #000;
+				background-color: #ffffff;
+				border: 1px solid #dbdbdb;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		}
+		&__data {
+			margin-bottom: 30px;
+			color: #fff;
+			a {
+				color: #fff;
+			}
+		}
+		&__checkbox {
+			margin-top: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			input {
+				cursor: pointer;
+				border-radius: 5px;
+			}
+			p {
+				color: #fff;
+			}
+			a {
+				color: #2c69af;
+			}
+		}
+		.form__field {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			textarea {
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+
+				margin-top: 15px;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				font-size: 14px;
+				line-height: 16px;
+				font-weight: 400;
+				text-align: left;
+				color: #000;
+				border-radius: 5px;
+				background-color: #ffffff;
+				border: 1px solid #dbdbdb;
+			}
+		}
+		.contact-form__titile {
+			color: #fff;
+		}
 	}
 }
 
 @media (max-width: 1200px) {
-	.circle-container .circle-item {
+	.main__our-competitions {
+		padding: 30px;
+		margin: 0 auto;
+	}
+	.main .circle-container .circle-item {
 		text-wrap: wrap;
 	}
 	.contact-form__text-fields {
@@ -247,16 +256,35 @@ body {
 	}
 }
 @media (max-width: 992px) {
-	.circle-container .circle-item {
-		text-wrap: wrap;
+	.main .circle-container {
+		background-image: url(../img/pzk_mb.png);
+		background-size: auto;
+		.circle-item {
+			@include place-elements-on-circle(12, 180px);
+		}
+	}
+
+	.contact-form__text-fields {
+		padding: 0 15px;
+		.form__field textarea {
+			padding: 0 15px;
+			max-width: unset;
+			width: 100%;
+		}
+	}
+	.contact-form__boxes {
+		max-width: unset;
+	}
+}
+@media (max-width: 768px) {
+	.main .circle-container {
+		.circle-item {
+			@include place-elements-on-circle(12, 150px);
+		}
 	}
 	.contact-form__text-fields {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media (max-width: 768px) {
-	.container {
-		width: 720px;
-		max-width: 100%;
-	}
+@media (max-width: 576px) {
 }
