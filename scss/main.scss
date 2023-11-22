@@ -4,6 +4,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Roboto';
+	color: #000;
 }
 
 .container {
@@ -63,6 +64,9 @@ body {
 		}
 	}
 }
+.main {
+	margin-bottom: 120px;
+}
 .main__our-competitions {
 	margin: 90px auto;
 }
@@ -78,14 +82,52 @@ body {
 
 	.circle-item {
 		position: absolute;
+		display: flex;
+		align-items: center;
+		text-wrap: nowrap;
+		gap: 15px;
 		top: 272px;
 		right: 272px;
 		width: 50px;
 		height: 50px;
-		background-color: #3498db;
+		background-color: #fff;
 		border-radius: 50%;
 		transform: translate(-50%, -50%);
 		@include place-elements-on-circle(12, 300px);
+		img {
+			width: 80px;
+			max-height: 80px;
+			max-width: 100%;
+			height: auto;
+		}
+		&:nth-child(4) {
+			display: flex;
+			flex-direction: column;
+		}
+		&:nth-child(10) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		&:nth-child(9) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		&:nth-child(8) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		&:nth-child(7) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		&:nth-child(6) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		&:nth-child(5) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
 	}
 }
 .contact-form {
@@ -119,6 +161,7 @@ body {
 		background-color: #35a8e0;
 		border: 1px solid #35a8e0;
 		border-radius: 5px;
+		cursor: pointer;
 	}
 
 	&__text-fields {
@@ -127,6 +170,7 @@ body {
 		gap: 15px;
 		input,
 		select {
+			padding-left: 15px;
 			max-width: 100%;
 			height: 50px;
 			font-family: 'Hind';
@@ -137,6 +181,7 @@ body {
 			background-color: #ffffff;
 			border: 1px solid #dbdbdb;
 			border-radius: 5px;
+			cursor: pointer;
 		}
 	}
 	&__data {
@@ -152,6 +197,10 @@ body {
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
+		input {
+			cursor: pointer;
+			border-radius: 5px;
+		}
 		p {
 			color: #fff;
 		}
