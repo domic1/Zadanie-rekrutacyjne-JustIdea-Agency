@@ -273,6 +273,9 @@ body {
 	.contact-form__text-fields {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.main__text-field {
+		margin-bottom: 90px;
+	}
 }
 @media (max-width: 992px) {
 	.main .circle-container {
@@ -281,6 +284,10 @@ body {
 		.circle-item {
 			@include place-elements-on-circle(12, 180px);
 		}
+	}
+	.main__text-field,
+	.main {
+		margin-bottom: unset;
 	}
 
 	.contact-form__text-fields {
@@ -320,14 +327,18 @@ body {
 	}
 	.main .circle-container {
 		.circle-item {
-			div {
-				display: flex;
-				img {
-					width: 40px;
-					max-height: 40px;
-					max-width: 100%;
-					height: auto;
-				}
+			display: flex;
+			right: 45%;
+			@include place-elements-on-circle(12, 160px);
+
+			p {
+				display: none;
+			}
+			img {
+				width: 40px;
+				max-height: 40px;
+				max-width: 100%;
+				height: auto;
 			}
 		}
 	}

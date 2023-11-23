@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Funkcja do generowania losowego opóźnienia
 	function getRandomDelay() {
-		return Math.random() * 1.5 
+		return Math.random() * 1.5
 	}
 
 	// Przypisanie losowego opóźnienia dla każdego elementu
