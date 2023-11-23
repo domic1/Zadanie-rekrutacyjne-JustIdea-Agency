@@ -53,16 +53,33 @@ body {
 	color: #000;
 	font-weight: 400;
 }
-/* Mixin do rozmieszczenia elementów na średnicy koła */
+
+/* mixin  Animacja */
 @mixin place-elements-on-circle($num-elements, $circle-radius) {
 	$angle: 360deg / $num-elements;
+	$animation-delay: 0s;
 
 	@for $i from 1 through $num-elements {
+		$animation-delay: random(1) + s; // Losowe opóźnienie w sekundach
 		&:nth-child(#{$i}) {
 			transform: rotate($angle * ($i - 1)) translate($circle-radius) rotate(-$angle * ($i - 1));
+			animation: fadeInUp 0.8s ease-out $animation-delay;
 		}
 	}
 }
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+// ... (reszta kodu SCSS)
 
 .main {
 	margin-bottom: 120px;

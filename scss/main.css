@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto";
   color: #000;
@@ -57,7 +56,17 @@ body {
   font-weight: 400;
 }
 
-/* Mixin do rozmieszczenia elementów na średnicy koła */
+/* mixin  Animacja */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .main {
   margin-bottom: 120px;
 }
@@ -92,39 +101,51 @@ body {
 }
 .main .circle-container .circle-item:nth-child(1) {
   transform: rotate(0deg) translate(300px) rotate(0deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(2) {
   transform: rotate(30deg) translate(300px) rotate(-30deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(3) {
   transform: rotate(60deg) translate(300px) rotate(-60deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(4) {
   transform: rotate(90deg) translate(300px) rotate(-90deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(5) {
   transform: rotate(120deg) translate(300px) rotate(-120deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(6) {
   transform: rotate(150deg) translate(300px) rotate(-150deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(7) {
   transform: rotate(180deg) translate(300px) rotate(-180deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(8) {
   transform: rotate(210deg) translate(300px) rotate(-210deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(9) {
   transform: rotate(240deg) translate(300px) rotate(-240deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(10) {
   transform: rotate(270deg) translate(300px) rotate(-270deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(11) {
   transform: rotate(300deg) translate(300px) rotate(-300deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item:nth-child(12) {
   transform: rotate(330deg) translate(300px) rotate(-330deg);
+  animation: fadeInUp 0.8s ease-out 1s;
 }
 .main .circle-container .circle-item img {
   width: 80px;
@@ -287,39 +308,51 @@ body {
   }
   .main .circle-container .circle-item:nth-child(1) {
     transform: rotate(0deg) translate(180px) rotate(0deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(2) {
     transform: rotate(30deg) translate(180px) rotate(-30deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(3) {
     transform: rotate(60deg) translate(180px) rotate(-60deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(4) {
     transform: rotate(90deg) translate(180px) rotate(-90deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(5) {
     transform: rotate(120deg) translate(180px) rotate(-120deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(6) {
     transform: rotate(150deg) translate(180px) rotate(-150deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(7) {
     transform: rotate(180deg) translate(180px) rotate(-180deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(8) {
     transform: rotate(210deg) translate(180px) rotate(-210deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(9) {
     transform: rotate(240deg) translate(180px) rotate(-240deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(10) {
     transform: rotate(270deg) translate(180px) rotate(-270deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(11) {
     transform: rotate(300deg) translate(180px) rotate(-300deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(12) {
     transform: rotate(330deg) translate(180px) rotate(-330deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .contact-form__text-fields {
     padding: 0 15px;
@@ -340,39 +373,51 @@ body {
   }
   .main .circle-container .circle-item:nth-child(1) {
     transform: rotate(0deg) translate(150px) rotate(0deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(2) {
     transform: rotate(30deg) translate(150px) rotate(-30deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(3) {
     transform: rotate(60deg) translate(150px) rotate(-60deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(4) {
     transform: rotate(90deg) translate(150px) rotate(-90deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(5) {
     transform: rotate(120deg) translate(150px) rotate(-120deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(6) {
     transform: rotate(150deg) translate(150px) rotate(-150deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(7) {
     transform: rotate(180deg) translate(150px) rotate(-180deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(8) {
     transform: rotate(210deg) translate(150px) rotate(-210deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(9) {
     transform: rotate(240deg) translate(150px) rotate(-240deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(10) {
     transform: rotate(270deg) translate(150px) rotate(-270deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(11) {
     transform: rotate(300deg) translate(150px) rotate(-300deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .main .circle-container .circle-item:nth-child(12) {
     transform: rotate(330deg) translate(150px) rotate(-330deg);
+    animation: fadeInUp 0.8s ease-out 1s;
   }
   .forms .contact-form__text-fields {
     grid-template-columns: repeat(2, 1fr);
