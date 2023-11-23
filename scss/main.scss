@@ -54,7 +54,7 @@ body {
 	font-weight: 400;
 }
 
-/* mixin  Animacja */
+/* Mixin do rozmieszczenia elementów na okręgu */
 @mixin place-elements-on-circle($num-elements, $circle-radius) {
 	$angle: 360deg / $num-elements;
 	$animation-delay: 0s;
@@ -67,7 +67,7 @@ body {
 		}
 	}
 }
-
+/*  Animacja */
 @keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -79,7 +79,7 @@ body {
 	}
 }
 
-// ... (reszta kodu SCSS)
+/* Pierwsza sekcja na stronie */
 
 .main {
 	margin-bottom: 120px;
@@ -150,6 +150,7 @@ body {
 		}
 	}
 }
+/* Formularz */
 .forms {
 	height: auto;
 	width: 100%;
@@ -260,7 +261,7 @@ body {
 		}
 	}
 }
-
+/* RWD */
 @media (max-width: 1200px) {
 	.main__our-competitions {
 		padding: 30px;
